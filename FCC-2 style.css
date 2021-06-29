@@ -12,7 +12,7 @@ body{
 }
 
 .container{
-    width: 100%;
+    max-width: 550px;
     margin: 3.125rem;
     position: relative;
 }
@@ -32,28 +32,55 @@ body{
 
 #box{
     background-color: rgba(27, 27, 50, 0.8);
-    border-radius: 2%;
+    border-radius: 20px;
 }
 
 #survey-form{
     color: aliceblue;
     text-align: left;
+    line-height: 40px;
     padding: 30px;
+    font-size: 20px;
 }
+
+.form-grp{
+    margin-bottom: 20px;
+    padding: 4px;
+}
+
+label{
+    font-size: 20px;
+}
+
 input{
-    min-width: 100px;
-    display: flex;
-    height: 30px;
+    font-size: medium;
+    width: 98%;
+    border-radius: 6px;
+    border-style: none;
+    height: 40px;
 }
 
-@media (min-width: 768px){
-.container {
-    max-width: 720px;
-}
+::placeholder{
+    font-size: medium;
+    padding-left: 10px;
 }
 
-@media (max-width: 768px){
-.container {
-    max-width: 720px;
+#dropdown{
+    width: 98%;
+    height: 40px;
+    border-radius: 6px;
+    border-style: none;
+    font-size: large;
 }
+
+#drop{
+    padding-left: 20px;
+}
+
+p{
+    margin: 0;
+}
+
+.input-radio{
+    display: inline;
 }
