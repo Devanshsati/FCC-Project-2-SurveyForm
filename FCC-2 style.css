@@ -7,71 +7,100 @@ body{
         115deg,
         rgba(58, 58, 158, 0.8),
         rgba(136, 136, 206, 0.7) ), url(https://cdn.freecodecamp.org/testable-projects-fcc/images/survey-form-background.jpeg);
-        
-}
-
-.container{
-    width: 650px;
-    margin: 3.125rem;
+    color: aliceblue;
+    font-weight: bold;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
     position: relative;
 }
 
-#title{
-    color: rgb(50, 66, 80);
-    font-weight: bold;
-    
+.container{
+    width: 100%;
+    margin: 0 auto;
+}
+
+h1{
+    margin-bottom: 10px;
 }
 
 #description{
-    color: aliceblue;
-    size: 0.2rem;
     font-weight: lighter;
+    font-style: italic;
+    font-size: larger;
 }
 
 #box{
     background-color: rgba(27, 27, 50, 0.8);
-    border-radius: 10px;  
-    position: relative;
+    border-radius: 6px;
+    width: 50%;
+    margin: 0 auto;
 }
 
 #survey-form{
-    color: aliceblue;
     text-align: left;
-    line-height: 40px;
-    padding: 30px;
-    font-size: 20px;
+    width: 640px;
+    padding: 40px;
+    position: relative;
 }
 
 .form-grp{
     margin-bottom: 20px;
-    padding: 4px;
+    width: 100%;
+    position: relative;
 }
 
 label{
-    font-size: 20px;
+    display: flex;
+    font-size: larger;
+    padding-bottom: 10px;
 }
 
-input{
-    font-size: medium;
-    width: 98%;
-    border-radius: 7px;
+input, #dropdown{
+    width: 90%;
+    height: 30px;
     border-style: none;
-    height: 40px;
-}
-
-::placeholder{
-    font-size: medium;
+    border-radius: 5px;
+    font-size: large;
     padding-left: 10px;
 }
 
 #dropdown{
-    width: 99%;
-    height: 40px;
-    border-radius: 7px;
-    border-style: none;
-    font-size: large;
+    width: 92%;
+    height: 32px;
 }
 
 p{
+    font-size: larger;
+    margin-bottom: 10px;
+}
+.rbutton{
+    padding: 0;    
+}
+
+#userchoice , #checkbox{
+    width: 3%;
     margin: 0;
+    display: inline-block;
+    margin-right: 15px;
+}
+
+#textarea{
+    min-height: 100px;
+    width: 590px;
+    resize: vertical;
+    padding-left: 10px;
+    border-style: none;
+    border-radius: 5px;
+    font-size: larger;
+}
+
+#submit{
+    width: 600px;
+    height: 30px;
+    border-style: none;
+    border-radius: 5px;
+    font-size: large;
+    background-color: #37af65;
+    color: aliceblue;
 }
